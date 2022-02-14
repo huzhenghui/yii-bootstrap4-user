@@ -1,0 +1,8 @@
+/config/cookieValidationKey.local.php
+/runtime/
+/vendor/
+/web/assets/
+/web/index.php
+/.env
+/composer.lock
+/yii
