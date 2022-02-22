@@ -5,6 +5,9 @@ namespace huzhenghui\yii\bootstrap4\user\models;
 use Yii;
 use yii\base\Model;
 
+/**
+ * @SuppressWarnings(PHPMD.CamelCasePropertyName) The property $_user is not named in camelCase.
+ */
 class LoginForm extends Model
 {
     public $username;
@@ -51,6 +54,7 @@ class LoginForm extends Model
 
     /**
      * @return User|null
+     * @SuppressWarnings(PHPMD.StaticAccess) Avoid using static access to class 'huzhenghui\yii\bootstrap4\user\models\User' in method 'getUser'.
      */
     public function getUser()
     {

@@ -45,6 +45,9 @@
             "Composer\\Config::disableProcessTimeout",
             "@php yii serve 127.0.0.1"
         ],
+        "phpmd": [
+            "php -dmemory_limit=100M /usr/local/opt/phpmd/bin/phpmd . ansi cleancode,codesize,controversial,design,naming,unusedcode --exclude '/vendor/'"
+        ],
         "clear-all": [
             "/usr/local/opt/trash-cli/bin/trash --force -- ./config/cookieValidationKey.local.php",
             "/usr/local/opt/trash-cli/bin/trash --force -- ./runtime/",

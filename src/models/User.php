@@ -5,6 +5,9 @@ namespace huzhenghui\yii\bootstrap4\user\models;
 use yii\base\BaseObject;
 use yii\web\IdentityInterface;
 
+/**
+ * @SuppressWarnings(PHPMD.ShortVariable) Avoid variables with short names like $id. Configured minimum length is 3.
+ */
 class User extends BaseObject implements IdentityInterface
 {
     public $id;
@@ -25,6 +28,7 @@ class User extends BaseObject implements IdentityInterface
 
     /**
      * {@inheritdoc}
+     * @SuppressWarnings(PHPMD.ShortVariable) Avoid variables with short names like $id. Configured minimum length is 3.
      */
     public static function findIdentity($id)
     {

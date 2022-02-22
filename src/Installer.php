@@ -7,9 +7,12 @@ use Composer\Script\Event;
 
 use yii\composer\Installer as YiiComposerInstaller;
 
-
 class Installer extends LibraryInstaller
 {
+    /**
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter) Avoid unused parameters such as '$event'.
+     * @SuppressWarnings(PHPMD.StaticAccess) Avoid using static access to class '\yii\composer\Installer' in method 'postUpdate'.
+     */
     public static function postUpdate(Event $event): void
     {
         YiiComposerInstaller::copyFiles(array(
@@ -20,6 +23,10 @@ class Installer extends LibraryInstaller
         ));
     }
 
+    /**
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter) Avoid unused parameters such as '$event'.
+     * @SuppressWarnings(PHPMD.StaticAccess) Avoid using static access to class '\yii\composer\Installer' in method 'postInstall'.
+     */
     public static function postInstall(Event $event): void
     {
         YiiComposerInstaller::generateCookieValidationKey("./config/cookieValidationKey.local.php");
